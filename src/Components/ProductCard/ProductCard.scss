@@ -1,0 +1,106 @@
+@import '/src/scss/variables';
+
+.product__block {
+  display: block;
+  width: 305px;
+  height: 320px;
+  background-color: #ffffff;
+  border: 0.645791px solid #dbdbdb;
+  border-radius: 6.45791px;
+}
+
+.product__container {
+  margin: 11px;
+}
+
+.product__img {
+  position: relative;
+  .img {
+    display: block;
+    margin: 0 auto;
+    width: 283px;
+    height: 149px;
+    margin-bottom: 9px;
+    object-fit: cover;
+  }
+  .sale {
+    position: absolute;
+    width: 83px;
+    height: 30px;
+    background: #6100ff;
+    border-radius: 13.8775px;
+    top: 0px;
+    right: 0px;
+    margin-top: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #ffffff;
+  }
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 5px;
+    color: $black;
+    height: 27px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+
+  h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    max-width: 218px;
+    margin-bottom: 13px;
+    color: $black;
+    height: 10px;
+    height: calc(19px * 2);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .price {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: $black;
+  }
+}
+
+.details__button {
+  width: 281.86px;
+  height: 41px;
+  background: #000000;
+  border-radius: 25.8316px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.details__button::first-letter {
+  text-transform: uppercase;
+}

@@ -1,0 +1,43 @@
+@import '/src/scss/variables';
+
+.pagination {
+  margin: 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.root {
+  margin-top: 80px;
+
+  li {
+    display: inline-block;
+  }
+
+  li.selected {
+    a {
+      background-color: $black;
+      color: white;
+    }
+  }
+
+  a {
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    display: inline-flex;
+    border: 1px solid $black;
+    border-radius: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    line-height: 18px;
+    font-weight: 600;
+
+    &:hover {
+      background-color: $black;
+      color: white;
+    }
+  }
+}
